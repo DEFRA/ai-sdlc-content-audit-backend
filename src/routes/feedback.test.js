@@ -61,7 +61,11 @@ describe('#feedback routes', () => {
       const second = await server.inject({
         method: 'POST',
         url: '/feedback',
-        payload: { ...validPayload, choice: 'AI_MISTAKE', comment: 'changed my mind' }
+        payload: {
+          ...validPayload,
+          choice: 'AI_MISTAKE',
+          comment: 'changed my mind'
+        }
       })
 
       expect(second.statusCode).toBe(201)
