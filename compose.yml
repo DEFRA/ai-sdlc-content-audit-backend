@@ -39,7 +39,7 @@ services:
 
   ################################################################################
 
-  cdp-node-backend-template:
+  ai-sdlc-content-audit-backend:
     build:
       context: .
       target: development
